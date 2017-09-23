@@ -1,0 +1,12 @@
+{
+  "name": "gulp for bootstrap v4",
+  "version": "1.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "2.1.3"
+  }
+}

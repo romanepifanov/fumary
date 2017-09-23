@@ -1,0 +1,33 @@
+@import 'common/_const.scss';
+html {
+    font-size: 16px;
+}
+
+body {
+    background: url(/assets/img/index/background.jpg) center 25%;
+    margin: 0;
+    & button {
+        outline: none;
+        cursor: pointer;
+    }
+    & input {
+        outline: none;
+        cursor: pointer;
+    }
+    & a {
+        cursor: pointer;
+    }
+}
+
+@import 'common/*.scss';
+@media (max-width:992px) {}
+
+@media (max-width:768px) {}
+
+@media (max-width:420px) {}
+
+@media (max-width:380px) {}
+
+@media (max-width:360px) {}
+
+@media (max-width:320px) {}
