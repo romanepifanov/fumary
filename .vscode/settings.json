@@ -1,0 +1,36 @@
+
+   // Adding new extensions to an already supported icon.
+// note: the format must match the existing one. If not, it will use the extension you provide.
+"vsicons.associations.files":[
+  { "icon": "js", "extensions": ["myExt1", "myExt2.custom.js"], "format": "svg" }
+]
+
+// Adding new filename extensions to an already supported icon.
+// note: the format must match the existing one. If not, it will use the extension you provide.
+"vsicons.associations.files": [
+    { "icon": "webpack",  "extensions": ["webpack.config.test.js"], "filename": true, "format": "svg" }
+
+// Disabling an already supported icon.
+// note: this is, indeed, the functionality that presets are leveraging.
+"vsicons.associations.files": [
+  { "icon": "js", "extensions": [], "format": "svg", "disable": true }
+]
+
+// Adding a new extension.
+// note: see instructions below on custom icons.
+"vsicons.associations.files": [
+  { "icon": "custom", "extensions": ["custom", "my.custom"], "format": "svg" }
+]
+
+// Changing the icon to an already supported icon.
+"vsicons.associations.files": [
+  { "icon": "newIcon", "extensions": [""], "format": "svg", "extends": "js" }
+]
+
+// Overriding an already supported icon.
+// note: the difference between overrides and extends is that overrides will completely
+// remove the older icon functionality while extends will keep older settings by 
+// putting yours on top.
+"vsicons.associations.files": [
+  { "icon": "myJs", "extensions": ["js", "custom.js"], "format": "svg", "overrides": "js" }
+]
