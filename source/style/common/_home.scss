@@ -1,0 +1,203 @@
+.home {
+    display: flex;
+    flex-wrap: nowrap;
+    &Slider {
+        width: 600px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        &:hover {
+            background-color: rgba(0, 0, 0, 0);
+        }
+    }
+    &SlabMenu {
+        display: flex;
+        flex-wrap: wrap;
+        width: 618px;
+        &First {
+            width: 100%;
+            height: 392px;
+            background: url(/assets/img/bar/bar.jpg) no-repeat 10% 0;
+            background-size: 100%;
+        }
+        &Second {
+            width: 309px;
+            height: 390px;
+            background: url(/assets/img/menu/photo-1503767849114-976b67568b02.jpg) no-repeat 20% 0;
+            background-size: 200%;
+        }
+        &Box {
+            width: 309px;
+            display: flex;
+            flex-wrap: wrap;
+            &First {
+                height: 195px;
+                width: 100%;
+                background: url(/assets/img/hookans/1.jpg) no-repeat;
+                background-size: 120%;
+            }
+            &Second {
+                height: 195px;
+                width: 100%;
+                background: url(/assets/img/about_us/1.jpg) no-repeat;
+                background-size: 100%;
+            }
+        }
+        & a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.6);
+            &:hover {
+                background-color: rgba(0, 0, 0, 0);
+            }
+        }
+    }
+}
+
+@media(min-width:1920px) {}
+
+@media(max-width:1200px) {}
+
+@media(max-width:960px) {}
+
+@media(max-width:768px) {
+    .home {
+        width: 100%;
+        flex-wrap: wrap;
+        &Slider {
+            margin-top: 60px;
+            height: 500px;
+            width: 100%;
+            border-bottom: 1px solid $green;
+        }
+        &SlabMenu {
+            width: 100%;
+            &First {
+                height: 500px;
+                width: 100%;
+                border-bottom: 1px solid $green;
+            }
+            &Second {
+                height: 500px;
+                width: 100%;
+                background-size: 100%;
+                border-bottom: 1px solid $green;
+            }
+            &Box {
+                width: 100%;
+                &First {
+                    height: 500px;
+                    width: 100%;
+                    border-bottom: 1px solid $green;
+                }
+                &Second {
+                    height: 500px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:420px) {
+    .home {
+        &Slider {
+            height: 400px;
+        }
+        &SlabMenu {
+            &First {
+                height: 400px;
+                background-size: 144%;
+            }
+            &Second {
+                height: 400px;
+                background-size: 144%;
+            }
+            &Box {
+                &First {
+                    height: 400px;
+                    background-size: 160%;
+                }
+                &Second {
+                    height: 400px;
+                    background-size: 144%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:380px) {
+    .home {
+        &Slider {
+            height: 300px;
+        }
+        &SlabMenu {
+            &First {
+                height: 300px;
+            }
+            &Second {
+                height: 300px;
+            }
+            &Box {
+                &First {
+                    height: 300px;
+                }
+                &Second {
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:360px) {
+    .home {
+        &Slider {
+            height: 280px;
+        }
+        &SlabMenu {
+            &First {
+                height: 280px;
+            }
+            &Second {
+                height: 280px;
+            }
+            &Box {
+                &First {
+                    height: 280px;
+                }
+                &Second {
+                    height: 280px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:320px) {
+    .home {
+        &Slider {
+            height: 260px;
+        }
+        &SlabMenu {
+            &First {
+                height: 260px;
+            }
+            &Second {
+                height: 260px;
+            }
+            &Box {
+                &First {
+                    height: 260px;
+                }
+                &Second {
+                    height: 260px;
+                }
+            }
+        }
+    }
+}

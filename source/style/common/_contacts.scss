@@ -1,0 +1,356 @@
+.contacts {
+    box-sizing: border-box;
+    padding: 0 55px 55px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    &Form {
+        width: 100%;
+        display: flex;
+        &Left {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-self: flex-start;
+            margin-right: 15px;
+            & input {
+                width: 330px;
+                height: 45px;
+                border: none;
+                background: $grey;
+                padding: 14px 20px;
+                box-sizing: border-box;
+                color: $black;
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+        }
+        &Right {
+            display: flex;
+            width: 450px;
+            height: 200px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-content: flex-start;
+            & textarea {
+                width: 450px;
+                height: 105px;
+                border: none;
+                background: $grey;
+                padding: 14px 20px;
+                box-sizing: border-box;
+                color: $black;
+                font-size: 24px;
+                margin-bottom: 15px;
+                resize: none;
+            }
+            & button {
+                width: 250px;
+                height: 50px;
+                color: $black;
+                font-size: 24px;
+                border: none;
+                background: $grey;
+                padding: 14px;
+                box-sizing: border-box;
+            }
+        }
+    }
+    &Map {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        &Left {
+            width: 550px;
+            &__title {
+                margin-bottom: 14px
+            }
+            &__text {
+                margin-bottom: 14px;
+                font-size: 20px;
+                color: $white;
+                width: 90%;
+                height: 50px;
+            }
+            &__map {
+                width: 500px;
+                height: 250px;
+            }
+        }
+        &Right {
+            width: 550px;
+            &__title {
+                margin-bottom: 14px
+            }
+            &__text {
+                margin-bottom: 14px;
+                font-size: 20px;
+                color: $white;
+                width: 90%;
+                height: 50px;
+            }
+            &__map {
+                width: 500px;
+                height: 250px;
+            }
+        }
+    }
+}
+
+@media (min-width:1920px) {
+    .contacts {
+        box-sizing: border-box;
+        padding: 0 55px 55px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        &Form {
+            width: 100%;
+            display: flex;
+            margin-bottom: 60px;
+            &Left {
+                display: flex;
+                width: 925px;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-self: flex-start;
+                margin-right: 25px;
+                & input {
+                    width: 450px;
+                    height: 50px;
+                    border: none;
+                    background: $grey;
+                    padding: 14px 20px;
+                    box-sizing: border-box;
+                    color: $black;
+                    font-size: 24px;
+                    margin-bottom: 25px;
+                }
+            }
+            &Right {
+                display: flex;
+                width: 550px;
+                height: 200px;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                & textarea {
+                    width: 550px;
+                    height: 125px;
+                    border: none;
+                    background: $grey;
+                    padding: 14px 20px;
+                    box-sizing: border-box;
+                    color: $black;
+                    font-size: 24px;
+                    margin-bottom: 25px;
+                    resize: none;
+                }
+                & button {
+                    width: 250px;
+                    height: 50px;
+                    color: $black;
+                    font-size: 24px;
+                    border: none;
+                    background: $grey;
+                    padding: 14px;
+                    box-sizing: border-box;
+                }
+            }
+        }
+        &Map {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            &Left {
+                width: 700px;
+                &__title {
+                    margin-bottom: 14px
+                }
+                &__text {
+                    margin-bottom: 14px;
+                    font-size: 20px;
+                    color: $white;
+                    width: 100%;
+                    height: 76px;
+                }
+                &__map {
+                    width: 700px;
+                    height: 450px;
+                }
+            }
+            &Right {
+                width: 700px;
+                &__title {
+                    margin-bottom: 14px
+                }
+                &__text {
+                    margin-bottom: 14px;
+                    font-size: 20px;
+                    color: $white;
+                    width: 100%;
+                    height: 76px;
+                }
+                &__map {
+                    width: 700px;
+                    height: 450px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1200px) {}
+
+@media (max-width:960px) {}
+
+@media (max-width:768px) {
+    .contacts {
+        padding: 0 16px 16px;
+        &Form {
+            margin-bottom: 20xp;
+            &Right {
+                display: flex;
+                width: 390px;
+                height: 200px;
+                justify-content: flex-end;
+                & textarea {
+                    width: 390px;
+                    height: 105px;
+                }
+            }
+        }
+        &Map {
+            width: 100%;
+            flex-wrap: wrap;
+            &Left {
+                width: 100%;
+                margin-bottom: 16px;
+                &__text {
+                    width: 100%;
+                }
+                &__map {
+                    width: 100%;
+                    height: 450px;
+                }
+            }
+            &Right {
+                width: 100%;
+                &__text {
+                    width: 100%;
+                }
+                &__map {
+                    width: 100%;
+                    height: 450px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:420px) {
+    .contacts {
+        &Form {
+            flex-wrap: wrap;
+            &Left {
+                width: 100%;
+                & input {
+                    width: 100%;
+                }
+                margin-right: 0;
+            }
+        }
+        &Map {
+            width: 100%;
+            flex-wrap: wrap;
+            &Left {
+                &__text {
+                    height: 70px;
+                }
+                &__map {
+                    height: 350px;
+                }
+            }
+            &Right {
+                &__text {
+                    height: 70px;
+                }
+                &__map {
+                    height: 350px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:380px) {
+    .contacts {
+        &Form {
+            &Right {
+                & textarea {
+                    width: 100%;
+                }
+            }
+        }
+        &Map {
+            &Left {
+                &__map {
+                    height: 320px;
+                }
+            }
+            &Right {
+                &__map {
+                    height: 320px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:360px) {
+    .contacts {
+        &Map {
+            &Left {
+                &__map {
+                    height: 300px;
+                }
+            }
+            &Right {
+                &__map {
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .contacts {
+        &Form {
+            &Right {
+                & button {
+                    width: 100%;
+                    height: 45px;
+                    padding: 10px;
+                }
+            }
+        }
+        &Map {
+            &Left {
+                &__text {
+                    height: 90px;
+                }
+                &__map {
+                    height: 260px;
+                }
+            }
+            &Right {
+                &__text {
+                    height: 90px;
+                }
+                &__map {
+                    height: 260px;
+                }
+            }
+        }
+    }
+}

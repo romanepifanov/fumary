@@ -1,0 +1,219 @@
+.header {
+    width: 300px;
+    padding: 25px;
+    height: 100%;
+    box-sizing: border-box;
+    &__photoBlock {
+        margin-bottom: 0;
+        &Logotype {
+            width: 220px;
+            &Phone {
+                display: none;
+            }
+        }
+    }
+    &__block {
+        width: 100%;
+    }
+    &__menuBlock {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+        &Item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            &:hover {
+                box-sizing: border-box;
+                border-top: 1px solid $black;
+                border-bottom: 1px solid $black;
+            }
+            &:focus {
+                box-sizing: border-box;
+                border-top: 1px solid $green;
+                border-bottom: 1px solid $green;
+                color: $green;
+            }
+        }
+    }
+    &__socialnetworkBlock {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        &Item {
+            border: 1px solid $black;
+            height: 36px;
+            width: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &Photo {
+                width: 32px;
+            }
+        }
+    }
+    &__copyrightBlock {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        &Item {
+            &Photo {
+                width: 173px;
+            }
+        }
+    }
+}
+
+.active {
+    & span {
+        background: transparent;
+        &::before {
+            left: 1px;
+            transform: rotate(-45deg) translate(5px, -6px);
+        }
+        &::after {
+            left: 1px;
+            transform: rotate(45deg) translate(5px, 6px);
+        }
+    }
+}
+
+@media (min-width:1920px) {
+    .header {
+        height: 1080px;
+        &__photoBlock {
+            margin-bottom: 34px;
+            &Logotype {
+                width: 250px;
+            }
+        }
+        &__menuBlock {
+            margin-bottom: 130px;
+        }
+        &__socialnetworkBlock {
+            margin-bottom: 210px;
+        }
+    }
+}
+
+@media (max-width:920px) {
+    .header {
+        &__photoBlock {
+            &Batton {
+                display: none;
+            }
+            &Logotype {
+                &Phone {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .header {
+        position: fixed;
+        width: 100%;
+        height: 60px;
+        padding: 0;
+        box-sizing: border-box;
+        background: $black;
+        &__photoBlock {
+            height: 60px;
+            padding: 0 16px;
+            display: flex;
+            justify-content: space-between;
+            &Batton {
+                margin-top: 30px;
+                display: flex;
+                & span {
+                    //добавить js
+                    position: relative;
+                    display: block;
+                    width: 38px;
+                    height: 3px;
+                    background: $green;
+                    transition: all .2s ease-in-out;
+                    &::before {
+                        position: absolute;
+                        background: $green;
+                        content: '';
+                        width: 38px;
+                        height: 3px;
+                        transition: all .2s ease-in-out;
+                        top: 8px;
+                    }
+                    &::after {
+                        position: absolute;
+                        background: $green;
+                        content: '';
+                        width: 38px;
+                        height: 3px;
+                        transition: all .2s ease-in-out;
+                        top: -8px;
+                    }
+                }
+            }
+            &Logotype {
+                display: none;
+                &Phone {
+                    display: flex;
+                    margin-left: -20px;
+                    width: 100px;
+                }
+            }
+        }
+        &__block {
+            display: none;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .header {
+        &__block {
+            margin-top: 20px;
+            height: 700px;
+            display: none; //block
+            background: $black;
+            font-size: 19px;
+        }
+        &__menuBlock {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            &Item {
+                box-sizing: border-box;
+                display: flex;
+                color: $white;
+                border-top: 1px solid $white;
+                border-bottom: 1px solid $white;
+                &:focus {
+                    background: $green;
+                    color: $black;
+                }
+            }
+        }
+        &__socialnetworkBlock {
+            justify-content: center;
+            &Item {
+                border: 1px solid $white;
+                margin-right: 36px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &Photo {
+                    background: white;
+                }
+            }
+        }
+        &__copyrightBlock {
+            display: none;
+        }
+    }
+}

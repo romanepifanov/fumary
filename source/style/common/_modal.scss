@@ -1,0 +1,172 @@
+.overlay {
+    background: rgba(0, 0, 0, .75);
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none; //block
+}
+
+.modal {
+    background: $black;
+    width: 800px;
+    height: 500px;
+    position: fixed;
+    margin: -250px 0 0 -400px;
+    top: 50%;
+    left: 50%;
+    z-index: 10000;
+    display: none;//flex
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    box-sizing: border-box;
+    align-content: flex-start; // display: none;
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-content: flex-start;
+        margin-bottom: 26px;
+        width: 100%;
+    }
+    &__closeButton {
+        width: 36px;
+        height: 36px;
+        position: relative;
+        left: 376px;
+        top: -70px;
+        .spanFirst {
+            background: $green;
+            display: block;
+            position: relative;
+            width: 36px;
+            height: 3px;
+            box-sizing: border-box;
+            cursor: pointer;
+            transform: rotate(-45deg);
+        }
+        .spanSecond {
+            background: $green;
+            display: block;
+            position: relative;
+            top: -3px;
+            width: 36px;
+            height: 3px;
+            box-sizing: border-box;
+            cursor: pointer;
+            transform: rotate(45deg);
+        }
+    }
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 60px;
+        & input {
+            width: 450px;
+            height: 50px;
+            border: none;
+            background: $grey;
+            padding: 14px 20px;
+            box-sizing: border-box;
+            color: $black;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+    }
+    &__send {
+        width: 250px;
+        height: 50px;
+        color: $black;
+        font-size: 24px;
+        border: none;
+        background: $grey;
+        padding: 14px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width:768px) {
+    .overlay {
+        background: rgba(255, 255, 255, 0.600);
+    }
+    .modal {
+        width: 500px;
+        height: 500px;
+        margin: -250px 0 0 -250px;
+        &__closeButton {
+            left: 226px;
+            top: -70px;
+        }
+    }
+}
+
+@media (max-width:420px) {
+    .modal {
+        width: 400px;
+        height: 400px;
+        margin: -200px 0 0 -200px;
+        &__title {
+            margin-bottom: 16px;
+        }
+        &__closeButton {
+            top: -60px;
+            left: 176px;
+        }
+        &__box {
+            margin-bottom: 30px;
+            & input {
+                width: 100%;
+                height: 40px;
+                padding: 10px 10px;
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width:380px) {
+    .modal {
+        width: 360px;
+        height: 360px;
+        margin: -180px 0 0 -180px;
+        &__closeButton {
+            left: 155px;
+        }
+        &__box {
+            margin-bottom: 9px;
+            & input {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .modal {
+        width: 318px;
+        height: 318px;
+        margin: -159px 0 0 -159px;
+        &__closeButton {
+            top: -45px;
+            left: 138px;
+        }
+        &__title {
+            margin-bottom: 0;
+        }
+        &__box {
+            margin-bottom: 9px;
+            & input {
+                height: 35px;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+        }
+        &__send {
+            height: 40px;
+            padding: 8px;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.box{
+    background: $greyDark;
+    width: 1615px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    overflow-y: auto;    
+    &Items{
+        display: flex;
+        justify-content: space-between;
+        width: 1425px;
+        height: 400px;
+        margin-bottom: 50px;
+        &Picture{
+            width: 400px;
+            height: 400px;
+        }
+        &Description{
+            box-sizing: border-box;
+            width: 1005px;
+            border-top: 1px solid $grey;
+            border-bottom: 1px solid $grey;
+            padding: 20px 20px 20px 0;
+        }
+
+    }
+    &Title{
+        box-sizing: border-box;
+        padding: 55px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 40px;
+        &Space{ width: 20px}
+        &White{ color:$white;}
+        &Green{ color:$green;}
+    }
+}
+@media (max-width:768px) {
+    .box{
+
+        &Title{
+
+            padding: 85px 16px 35px;
+
+        }
+    } 
+}

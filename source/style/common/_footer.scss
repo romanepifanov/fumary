@@ -1,0 +1,21 @@
+.footer {
+    display: none;
+    width: 100%;
+    &__copyrightBlock {
+        background: $white;
+        width: 70px;
+        &Item {
+            display: flex;
+            justify-content: center;
+            &Photo {
+                height: 38px;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .footer {
+        display: block;
+    }
+}

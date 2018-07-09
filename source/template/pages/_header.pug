@@ -1,1 +1,32 @@
 header.header
+    .header__photoBlock
+        img(src="assets/img/Icons/fumaryDesktop.svg").header__photoBlockLogotype
+        img(src="assets/img/Icons/fumaryPhon.svg").header__photoBlockLogotypePhone
+        .header__photoBlockBatton
+            span
+    .header__block
+        .header__menuBlock
+            -
+                var itemMenu = [
+                  {href : "#", title : "МЕНЮ"}
+                  ,{href : "#", title : "БАР"}
+                  ,{ title : "ЗАКАЗАТЬ СТОЛИК", id : "open__modal"}
+                  ,{href : "#", title : "АКЦИИ"}
+                  ,{href : "#", title : "О НАС"}
+                  ,{href : "#", title : "КОНТАКТЫ"}  
+                ];
+            each item in itemMenu
+                a(href= item.href class=item.id).header__menuBlockItem.bigText= item.title
+        .header__socialnetworkBlock
+            -
+                var itemSocialnetwork = [
+                  {href : "#", src : "assets/img/Icons/instagram.svg"}
+                  ,{href : "#", src : "assets/img/Icons/facebook.svg"}
+                  ,{href : "#", src : "assets/img/Icons/vkontakte.svg"}
+                ];
+            each item in itemSocialnetwork
+                a(href= item.href).header__socialnetworkBlockItem
+                    img(src= item.src).header__socialnetworkBlockItemPhoto
+        .header__copyrightBlock
+            a(href="http://owlcom.h1n.ru/").header__copyrightBlockItem
+                img(src="assets/img/Icons/logo.png").header__copyrightBlockItemPhoto

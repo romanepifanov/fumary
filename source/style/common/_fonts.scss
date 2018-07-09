@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "AdobeNaskh-Medium";
+    src: url("/assets/fonts/AdobeNaskh/AdobeNaskh-Medium.otf");
+}
+
+@mixin AdobeNaskh($style: regular) {
+    @if($style==medium) {
+        font-family: "AdobeNaskh-Medium";
+    }
+}

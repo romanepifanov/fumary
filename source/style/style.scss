@@ -4,8 +4,12 @@ html {
 }
 
 body {
-    background: url(/assets/img/index/background.jpg) center 25%;
+    display: flex;
     margin: 0;
+    background: $greyLight;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    @include AdobeNaskh(medium);
     & button {
         outline: none;
         cursor: pointer;
@@ -15,14 +19,44 @@ body {
         cursor: pointer;
     }
     & a {
+        outline: none;
+        text-decoration: none;
         cursor: pointer;
     }
+}
+
+.title {
+    font-size: 40px;
+    color: $white;
+    &Green {
+        font-size: 24px;
+        color: $green;
+    }
+    &White {
+        font-size: 24px;
+        color: $white;
+    }
+}
+
+.textBox {
+    display: flex;
+    flex-wrap: column wrap;
+}
+
+.bigText {
+    font-size: 19px;
+    color: $black;
 }
 
 @import 'common/*.scss';
 @media (max-width:992px) {}
 
-@media (max-width:768px) {}
+@media (max-width:768px) {
+    body {
+        flex-wrap: wrap;
+        overflow-y: auto;
+    }
+}
 
 @media (max-width:420px) {}
 
